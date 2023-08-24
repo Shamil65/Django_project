@@ -1,7 +1,8 @@
 html
 <u>
-{% for odj in my_objects %}
-    <li>{{ obj }}</li>
+{% for obj in my_objects %}
+    <li>{{ obj.title }}</li>
+    <img src="{{ obj.img.url }}">
 {% empty %}
     <li>No objects found.</li>
 {% endfor %}
